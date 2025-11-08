@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from report import get_whole_data
 
 st.title('Moje webová prezentace')
 
