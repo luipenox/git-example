@@ -68,7 +68,7 @@ def get_data(connection, query) -> dict:
     return cursor.fetchall()
 
 
-def get_whole_data(inner_queries):
+def get_whole_data(inner_queries=queries):
     connection = None
     data = {}
     try:
@@ -116,6 +116,3 @@ def generate_excel(inner_data):
 def main():
     data = get_whole_data(queries)
     generate_excel(data)
-
-
-main()
